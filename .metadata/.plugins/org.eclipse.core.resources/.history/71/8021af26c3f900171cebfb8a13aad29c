@@ -1,0 +1,14 @@
+
+public class Helloworld {
+
+	public static void main(String[] args){
+
+			String [][] abc = {
+					{"AB","BC"},
+					{"CD","DF"},
+					{"FG","GH"}
+
+			};
+
+	}
+}

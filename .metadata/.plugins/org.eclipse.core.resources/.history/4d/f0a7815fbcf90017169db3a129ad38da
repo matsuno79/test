@@ -1,0 +1,16 @@
+
+public class Helloworld {
+
+	public static void main(String[] args){
+
+		int b = 13;
+		if(b>=20){
+			System.out.println("成人");
+		}
+
+		else {
+			System.out.println("未成人");
+		}
+
+	}9
+}
