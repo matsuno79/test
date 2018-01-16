@@ -12,3 +12,4 @@ public class Helloworld {
 				System.out.println(abc[0][0]);
 	}
 }
+cd Desktop\workspace\workspace-matsuno\test
