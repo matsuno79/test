@@ -1,0 +1,24 @@
+/**
+ *
+ */
+package snippet;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.ResultSet;
+import java.sql.PreparedStatement;
+
+/**
+ * @author internousdev
+ *
+ */
+public class TestUserDAO {
+
+	String name = "";
+	String password = "";
+
+	public void select(String name,String password) {
+		DBConnector db = new DBConnector();
+		Connection con = db.getConnection();
+	}
+
+}

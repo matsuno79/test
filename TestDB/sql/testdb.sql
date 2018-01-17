@@ -1,12 +1,18 @@
 drop database if exists testdb;
 create database testdb;
 use testdb;
-create table test_table(
-user_id int,
-user_name varchar(255),
-password varchar(255)
+
+create table test_table (
+No int,
+name varchar(255),
+age int(255),
+Mail varchar(255)
 );
 
-insert into test_table varchar(1,"wago","123");
-insert into test_table varchar(2,"sinichi","456");
-insert into test_table varchar(3,"matu","135");
+insert into test_table values(1,"wago",32,"@yahoo");
+insert into test_table values(2,"shiro",24,"@-");
+insert into test_table values(3,"matu",25,"@@");
+insert into test_table values(3,"nakata",89,"@@@");
+
+
+

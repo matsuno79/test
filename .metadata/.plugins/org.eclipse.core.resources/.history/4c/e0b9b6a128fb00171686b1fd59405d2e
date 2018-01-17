@@ -1,0 +1,16 @@
+/**
+ *
+ */
+package snippet;
+
+/**
+ * @author internousdev
+ *
+ */
+public class DBConnector {
+
+	private static String driberName = "com.mysql.jdbc.Driver";
+
+
+
+}
