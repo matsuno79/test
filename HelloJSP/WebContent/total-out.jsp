@@ -14,12 +14,12 @@
 request.setCharacterEncoding("UTF-8");
 int price = Integer.parseInt(request.getParameter("price"));
 int count = Integer.parseInt(request.getParameter("count"));
-int delibery = Integer.parseInt(request.getParameter("delibery"));
+int delivery = Integer.parseInt(request.getParameter("delivery"));
 
 
 %>
 
-<%=price  %>円　ｘ<%=count %>個+送料<%=deli %>
-
+<%=price%>円x<%=count %>個+送料<%=delivery %>円＝<a></a>
+<%=price*count+delivery %>円
 </body>
 </html>
