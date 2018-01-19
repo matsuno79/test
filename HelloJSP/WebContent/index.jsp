@@ -12,8 +12,8 @@
 
 <p>お名前を入力してください。</p>
 
-<form metbod="post" action="greeting-out.jsp">
-<input type="text" name="user">
+<form metbod="post"action="greeting-out.jsp">
+<input type="text"name="user">
 <input type="submit"valie="確定">
 
 
