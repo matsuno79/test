@@ -1,0 +1,45 @@
+
+public class Test {
+	public static void main(String[] args){
+		/*
+		Person wago = new Person();
+		Person naka = new Person();
+		Person haru = new Person();
+
+		wago.name="和合真一";
+		wago.age=31;
+		System.out.println(wago.name);
+		System.out.println(wago.age);
+		wago.talk();
+
+		naka.name="中田敦彦";
+		naka.age=35;
+		System.out.println(naka.name);
+		System.out.println(naka.age);
+		naka.walk();
+
+		haru.name="春風";
+		haru.age=16;
+		System.out.println(haru.name);
+		System.out.println(haru.age);
+		haru.run();*/
+
+
+		Robot aibo = new Robot();
+		Robot asimo = new Robot();
+		Robot pep = new Robot();
+		Robot dpra = new Robot();
+
+		aibo.name = "aibo";
+		asimo.name = "asimo";
+		pep.name = "pepper";
+		dpra.name = "dpraemon";
+
+		aibo.talk();
+		asimo.run();
+		pep.walk();
+		dra.talk();
+
+	}
+
+}
