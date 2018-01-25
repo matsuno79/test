@@ -1,0 +1,35 @@
+
+public class SmartPhone extends Phone implements Mp3Player,NewFunction {
+	public void mail(){
+
+	}
+
+	public void internet(){
+
+	}
+
+	public void call(){
+
+	}
+
+	public void photo(){
+
+	}
+
+
+	public void play(){
+
+	}
+	public void next(){
+
+	}
+	public void back(){
+
+	}
+	public void stop(){
+
+	}
+
+
+
+}

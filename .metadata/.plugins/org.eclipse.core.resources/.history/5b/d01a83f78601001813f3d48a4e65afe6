@@ -1,0 +1,10 @@
+
+public class Capsule {
+
+	public static void main(String[] args) {
+		Person wago = new Person();
+		System.out.println(wago.setName("wago"));
+		System.out.println(wago.setAge(31));
+	}
+
+}
