@@ -15,7 +15,7 @@ public class LoginDAO {
 		String sql = "SELECT * FROM login_user_transaction where login_id ~ ? AND login_pass = ?";
 
 		try {
-			PreparedStatement preparedStatement = connection.prepareStatememt(sql);
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
 			preparedStatement.setString(1,loginUserId);
 			preparedStatement.setString(2,loginPassword);
