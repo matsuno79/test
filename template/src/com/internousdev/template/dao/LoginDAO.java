@@ -3,7 +3,8 @@ package com.internousdev.template.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import com.internousdev.template.action.LoginDTO;
+
+import com.internousdev.template.dto.LoginDTO;
 import com.internousdev.template.util.DBConnector;
 
 public class LoginDAO {
@@ -30,10 +31,11 @@ public class LoginDAO {
 				if(!(resultSet.getString("login_id").equals(null))){
 					loginDTO.setLoginFlg(true);
 				}
-
+			}
 			} catch(Exception e) {
 				e.printStackTrace();
 			}
+
 			return loginDTO;
 		}
 		public LoginDTO getLoginDTO() {

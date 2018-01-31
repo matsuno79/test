@@ -7,6 +7,10 @@ public class MyPageDTO {
 	private String totalCount;
 	private String payment;
 
+	public String userName;
+	public String id;
+	public String insert_date;
+
 	public String getItemName() {
 		return this.itemName;
 	}
@@ -33,6 +37,39 @@ public class MyPageDTO {
 		return this.payment;
 	}
 	public void setPayment(String Payment) {
-		this.payment = payment;
+		this.payment = Payment;
 	}
+
+
+
+	public String getUserName() {
+		return this.userName;
+	}
+
+	public void setUserName(String UserName) {
+		this.userName = UserName;
+	}
+
+
+	public String getId() {
+		return this.id;
+	}
+
+	public void setId(String Id) {
+		this.id = Id;
+	}
+
+
+
+	public String getInsert_date() {
+		return this.insert_date;
+	}
+
+	public void setInsert_date(String Insert_date) {
+		this.insert_date = Insert_date;
+	}
+
+
+
+
 }
