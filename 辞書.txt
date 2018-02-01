@@ -1,0 +1,87 @@
+taglib	    <%@ taglib prefix="s" uri="/struts-tags"%>	名詞	
+ht	.html	名詞	
+@	@yatoo.co.jp	名詞	
+n	\n	名詞	
+\	\r	名詞	
+ht	<!DOCTYPE html>	名詞	
+ht	</html>	名詞	
+ka	<>	名詞	
+ah	<a href = ""></a>	名詞	
+hre	<a href = ""></a>	名詞	
+bod	<body></body>	名詞	
+br	<br>	名詞	
+div	<div class=""></div>	名詞	
+foo	<footer></footer>	名詞	
+for	<form></form>	名詞	
+h1	<h1></h1>	名詞	
+hea	<head></head>	名詞	
+hea	<header></header>	名詞	
+ht	<html lang = "ja">	名詞	
+li	<li></li>	名詞	
+link	<link rel ="stylesheet" type="text/css" href="style.css">	名詞	
+mai	<main></main>	名詞	
+meta	<meta charset = "UTF-8">	名詞	
+jsp	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Content-Style-Type" content="text/css"><meta http-equiv="Content-Script-Type" content="text/javascript"><meta http-equiv="imagetoolbar" content="no"><meta name="description" content=""/><meta name="keywords" content	名詞	
+op	<option value =""></option>	名詞	
+p	<p></p>	名詞	
+scr	<script src ="></script>	名詞	
+jq	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	名詞	
+scr	<script src="script.js"></script>	名詞	
+scr	<script type="text/javascript" src = "script.js"></script>	名詞	
+sel	<select name=""></select>	名詞	
+ti	<title></title>	名詞	
+ul	<ul></ul>	名詞	
+iko	=""	名詞	
+ale	alert("");	名詞	
+back	background-color:	名詞	
+boo	boolean boo =true;	名詞	
+br	break;	名詞	
+ca	catch(Exception e) {e.printStackTrace();}	名詞	
+cd	cd Desktop\workspace\workspace-matsuno\test	名詞	
+cha	char char1 ='A';	名詞	
+cle	clear:both;	名詞	
+con	confirm("");	名詞	
+con	console.lig("");	名詞	
+con	console.log();	名詞	
+cre	CREATE table	名詞	
+doc	document.write("");	名詞	
+doc	document.write();	名詞	
+pri	e.printStackTrace();	名詞	
+el	eise if	名詞	
+el	else if(){}	名詞	
+fl	float b= (float)10/3;	名詞	
+fl	float:	名詞	
+flo	Float:left;	名詞	
+flo	Float:right;	名詞	
+font	font-size:25px	名詞	
+fun	function	名詞	
+git	git add --all	名詞	
+git	git commit -m ""	名詞	
+git	git push	名詞	
+hea	header	名詞	
+hei	height:	名詞	
+if	if(){}	名詞	
+im	import	名詞	
+ins	insert into	名詞	
+jq	jQuery	名詞	
+line	line-height:	名詞	
+list	list-style:	名詞	
+mar	margin-bottom	名詞	
+mar	margin-bottom:	名詞	
+pad	padding-left:	名詞	
+pad	padding-right:	名詞	
+pos	position:absolute;	名詞	
+pre	PreparedStatement	名詞	
+pri	private	名詞	
+pri	private static String	名詞	
+pub	public	名詞	
+pub	public static void main(String[] args){}	名詞	
+re	return	名詞	
+st	String	名詞	
+st	String abc = "";	名詞	
+sw	switch()	名詞	
+sy	System.out.println();	名詞	
+text	text-align:	名詞	
+v	var	名詞	
+var	varchar	名詞	
+wid	width:	名詞	

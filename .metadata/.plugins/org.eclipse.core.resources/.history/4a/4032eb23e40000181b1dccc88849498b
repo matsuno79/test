@@ -1,9 +1,0 @@
-
-public class Capsule {
-
-	public static void main(String[] args) {
-		Person wago = new Person("和合真一");
-		System.out.println(wago.name);
-	}
-
-}
