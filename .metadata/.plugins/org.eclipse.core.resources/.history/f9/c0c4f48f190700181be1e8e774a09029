@@ -1,0 +1,11 @@
+
+public class Capsule {
+
+	public static void main(String[] args) {
+
+		Person pe = new Person("wago",32);
+
+		System.out.println(pe.a);
+
+}
+}

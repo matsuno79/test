@@ -1,0 +1,13 @@
+
+public class ObjTest {
+
+	public static void main(String[] args){
+		Sub s = new Sub();
+		s.M();
+		s.C();
+		s.play1();
+		s.call();
+
+	}
+
+}

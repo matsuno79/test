@@ -1,0 +1,16 @@
+
+public class ObjTest {
+
+	public static void main(String[] args){
+		Sub s = new Sub();
+		Cp cp = new Cp("test",2);
+
+		s.M();
+		s.C();
+		s.play1();
+		s.call();
+
+		System.out.println(cp.test);
+	}
+
+}

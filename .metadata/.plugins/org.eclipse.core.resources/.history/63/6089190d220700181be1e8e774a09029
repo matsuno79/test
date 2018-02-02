@@ -1,0 +1,18 @@
+
+public class Cp {
+
+	private String test = null;
+	private int test2 = 0;
+
+
+
+
+public String getTest(){
+	return this.test;
+}
+
+public void String setTest(String test) {
+	this.test = test;
+}
+
+}

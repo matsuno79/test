@@ -1,64 +1,123 @@
 package com.internousdev.ecsite.action;
+
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
+import com.internousdev.ecsite.dao.MyPageDAO;
+import com.internousdev.ecsite.dto.BuyItemDTO;
+import com.internousdev.ecsite.dto.MyPageDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-import com.internousdev.ecsite.dao.MyPageDAO;
-import com.internousdev.ecsite.dto.MyPageDTO;
+public class MyPageAction extends ActionSupport implements SessionAware{
 
-public class MyPageAction extends ActionSupport implements SessionAware {
 
-	public Map<String,Object>session;
-	public MyPageDAO myPageDAO = new MyPageDAO();
 
-	private ArrayList<MyPageDTO> myPageList = new ArrayList<MyPageDTO>();
 
-	//public MyPageDTO myPageDTO = new MyPageDTO();
-	public String deleteFlg;
+
+	/**
+	 * ログイン情報を格納
+	 */
+	public Map<String, Object> session;
+
+
+	/**
+	 * マイページ情報格納DTO
+	 */
+	public ArrayList<MyPageDTO> myPageList = new ArrayList<MyPageDTO>();
+
+	/**
+	 * 削除フラグ
+	 */
+	private String deleteFlg;
+
 	private String message;
 
-	public String execute() throws SQLException {
+	private List<BuyItemDTO> buyItemDTOList;
 
-		//商品を削除しない場合
-		if(!session.containsKey("id")){
+
+	/**
+	 * 商品履歴取得メソッド
+	 *
+	 * @author internous
+	 */
+
+	public String execute() throws SQLException {
+		@SuppressWarnings("unchecked")
+		List<BuyItemDTO> buyItemDTOList=(List<BuyItemDTO>) session.get("list");
+		if (!session.containsKey("id")) {
 			return ERROR;
 		}
 
-		if(deleteFlg == null){
-			String item_transaction_id = session.get("id").toString();
+		// 商品履歴を削除しない場合
+		if(deleteFlg == null) {
+
+			if(buyItemDTOList != null){
+			for(int i=0; i<buyItemDTOList.size(); i++){
+
 			String user_master_id = session.get("login_user_id").toString();
 
-			myPageList = myPageDAO.getMyPageUserInfo(item_transaction_id,user_master_id);
+			MyPageDAO myPageDAO = new MyPageDAO();
 
-			session.put("buyItem_name",myPageDTO.getItemName());
-			session.put("total_price",myPageDTO.getTotalPrice());
-			session.put("total_count",myPageDTO.getTotalCount());
-			session.put("total_payment",myPageDTO.getPayment());
-			session.put("massage","");
 
-			//商品を削除する場合
-		}else if(deleteFlg.equals("1")) {
+			myPageList= myPageDAO.getMyPageUserInfo(user_master_id);
+
+			}
+
+
+			}else{
+				String user_master_id = session.get("login_user_id").toString();
+				MyPageDAO myPageDAO = new MyPageDAO();
+				myPageList = myPageDAO.getMyPageUserInfo(user_master_id);
+			}
+
+
+
+			Iterator<MyPageDTO> iterator = myPageList.iterator();
+			if (!(iterator.hasNext())) {
+				myPageList = null;
+			}
+		// 商品履歴を削除する場合
+		} else{
 			delete();
 		}
-		result = SUCCESS;
+
+		String result = SUCCESS;
 		return result;
 	}
 
+	/**
+	 * 商品履歴削除
+	 *
+	 * @throws SQLException
+	 */
 	public void delete() throws SQLException {
-		String item_transaction_id = session.get("id").toString();
+		@SuppressWarnings("unchecked")
+		List<BuyItemDTO> buyItemDTOList=(List<BuyItemDTO>) session.get("list");
+
+
+
 		String user_master_id = session.get("login_user_id").toString();
 
-		int res = myPageDAO.buyItemHistoryDelete(item_transaction_id,user_master_id);
+		MyPageDAO myPageDAO = new MyPageDAO();
+		int res = myPageDAO.buyItemHistoryDelete(user_master_id);
 
 		if(res > 0) {
-			session.put("message","商品情報を正しく削除しました");
-		}else if(res == 0) {
-			session.put("message","商品情報の削除に失敗しました");
+
+			myPageList = null;
+			setMessage("商品情報を正しく削除しました。");
+		} else if(res == 0) {
+			setMessage("商品情報の削除に失敗しました。");
 		}
+
+
 	}
+
+
 
 	public String getDeleteFlg() {
 		return deleteFlg;
@@ -68,8 +127,23 @@ public class MyPageAction extends ActionSupport implements SessionAware {
 		this.deleteFlg = deleteFlg;
 	}
 
+	public List<BuyItemDTO> getBuyItemDTOList(){
+		return buyItemDTOList;
+	}
+	public void setBuyItemDTOList(List<BuyItemDTO> buyItemDTOList){
+		this.buyItemDTOList=buyItemDTOList;
+	}
+
 	@Override
-	public void setSession(Map<String,Object>loginSessionMap){
-		this.session = loginSessionMap;
+	public void setSession(Map<String, Object> session) {
+		this.session = session;
+	}
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
 	}
 }

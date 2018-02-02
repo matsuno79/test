@@ -1,0 +1,8 @@
+
+public class Oomoto {
+
+	private void Play() {
+		System.out.println("MUSIC");
+	}
+
+}
