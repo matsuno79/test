@@ -1,0 +1,10 @@
+
+public class StudentSample {
+
+	public static void main(String[] args) {
+		Student murata = new Student();
+		murata.name="村田";
+		murata.printScore();
+	}
+
+}

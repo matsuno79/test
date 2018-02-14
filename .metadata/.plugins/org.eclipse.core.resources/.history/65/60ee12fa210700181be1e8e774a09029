@@ -1,7 +1,0 @@
-
-public class Cp {
-
-	private String test = null;
-	private int test2 = 0;
-
-}

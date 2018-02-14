@@ -1,7 +1,0 @@
-
-public class Jisso {
-
-	private abstract void play();
-	private abstract void call();
-
-}

@@ -1,8 +1,0 @@
-
-public class Sub extends Oomoto implements Jisso {
-
-	public coid C() {
-		System.out.println("CALLLLLL");
-	}
-
-}
