@@ -6,8 +6,10 @@
 <html>
 <head>
 
+	<meta charset="utf-8">
 
-<!-- スライドショー  -->
+
+    <!-- スライドショー  -->
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -24,7 +26,7 @@
 
   </script>
 
-	<meta charset="utf-8">
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta http-equiv="Content-Script-Type" content="text/javascript" />
@@ -33,11 +35,6 @@
 	<meta name="keywords" content="" />
 	<title>Home画面</title>
 	<style type="text/css">
-
-			   /*  #99FFCC 水色
-			 	   #D2691E 茶色
-
-			   */
 
 
 
@@ -48,7 +45,7 @@
 		   letter-spacing:1px;
 		   font-family:Verdana, Helvetica, sans-serif;
 		   font-size:12px;
-		   color:#D2691E;
+		   color:#333;
 		   background:#fff;
 		}
 
@@ -58,34 +55,30 @@
 		}
 
 		/* ========TEMPLATE LAYOUT======== */
-
-
-四角い枠
 		#top {
 		   width:780px;
-		   margin:20px auto;
-		   border:1px solid #333;
-
-		   			margin:0 auto;
-			display:block;
+		   margin:30px auto;
+		  /* border:1px solid #333;*/
 		}
-
-
 
 		#header {
 		   width: 100%;
-		   height: 35px;
-		   background-color: #99FFCC;
+		   height: 40px;
+		   background-color: black;
+		}
+
+
+/*左上タイトル*/
+
+ .logo{	float:left;
+ 		width:100px;
+		padding-left:10px;
+		color:white;
+		line-height:35px;
 }
 
- .logo{
-	padding-left:10px;
-	color:#D2691E;
-	font-size:20px
-	line-height:35px;
 
-}
-
+/*右上メニューの配置*/
 
 header ul{
 	float:right;
@@ -93,111 +86,94 @@ header ul{
 }
 
 header ul li{
-		   float:left;
-		   padding-right:20px;
-		   list-style:none;
-
-		   font-size:10px;
+	float:left;
+	padding-right:20px;
+	ist-style:none;
+	font-size:10px;
 		}
 
 
-		#main {
-		clear:both;
 
+		#main {	clear:both;
 		   width: 100%;
-		   height: 500px;
+		   height: 100%;
 		   text-align: center;
 		}
 
+
+
 .abc{
-			width: 500px;
-			margin-top:100px;
-
-			overflow:hidden;
-			margin:0 auto;
-
+		width: 100％;
+		margin-top:100px;
+		overflow:hidden;
+		margin:0 auto;
+    	/*position:relative;*/
 }
 
 
-$('.abc').bxSlider();
-
-
-
-
-.abc ul li{
-	display:block;
+.abc_wrap {
+	width:100%;
 	margin:0 auto;
-
-				width: 500px;
-			margin-top:100px;
-			position:relative;
 }
+
+
+
 
 .main-container{
 	width:97%;
+
 	margin:0 auto;
 
-	/*トップ画の隙間*/
-	margin-top:400px;
+	/*headerとmainの隙間*/
+	margin-top:100px;
+
+	margin-bottom:30px;
 }
 
 
-
-
-#left{
-	float:left;
-	background-color:skyblue;
-	width:20%;
-	height:600px;
-	margin-bottom:40px;
-}
-
-
-#right{
-	float:left;
-	background-color:lightblue;
-	width:78%;
-	height:600px;
-	margin-bottom:40px;
-}
 
 		#footer {
 			width: 100%;
-			height: 20px;
-			background-color: #99FFCC;
+			height: 40px;
+			background-color: black;
 			clear:both;
+            text-align:center;
+			line-height:30px;
 		}
 
+        /*「商品購入」ボタン*/
 		#text-center {
 			display: inline-block;
 			text-align: center;
 		}
 	</style>
 </head>
+
+
+
+
 <body>
 
+    <header>
 
+		<div class="logo">
+	<!-- 左上　★を押したらhomeへ -->
+	<a href="http://localhost:8080/ecsite/"><img src="img/hosi.png" alt="homeへ戻る"></a>
 
-<header>
-		<div class="logo">タイトル</div>
-
-
+</div>
 			<ul class="buildFrame">
-			<li><a href="/about/">メニュー1</a></li>
-			<li><a href="/menu2/">メニュー2</a></li>
-			<li><a href="/menu3/">メニュー3</a></li>
-			<li><a href="/menu4/">メニュー4</a></li>
+			<li><a href="/menu1/">ご利用ガイド</a></li>
+			<li><a href="http://localhost:8080/ecsite/login.jsp">ログイン</a></li>
+			<li><a href="http://localhost:8080/ecsite/buyItemConfirm.jsp">カート</a></li>
+			<li><a href="/menu4/">お問い合わせ</a></li>
+
+            <!-- ツイッターとフェイスブックアイコン -->
+		<li><a href="http://twitter.com" target="_blank" class="f_right face"><span><img src="img/btn_twit.gif" alt="ツイッター"  /></span></a></li>
+		<li><a href="https://www.facebook.com" target="_blank" class="f_right twit"><img src="img/btn_face.gif" alt="フェイスブック" /></a></li>
+
 
 			</ul>
-
-	</header>
-
-
-
-
-
-
-
+</header>
 
 	<div id="header">
 	 	<div id="pr">
@@ -205,76 +181,76 @@ $('.abc').bxSlider();
 	</div>
 
 
-			<div id="top">
 
+
+
+	<div id="main">
+		<div id="top">
 			<p>Home</p>
 
-<!-- スライドショー		-->
-<ul class="abc">
-    <li><img src="./img/image1.jpg" alt="画像だよ1"></li>
-    <li><img src="./img/image1.jpg" alt="画像だよ2"></li>
-    <li><img src="./img/image1.jpg" alt="画像だよ3"></li>
-
-		</ul>
+</div>
 
 
+            <!-- スライドショー	-->
+<div class="abc_wrap">
+<div class="abc">
+    <div><img src="img/image1.jpg" alt="画像だよ1"></div>
+    <div><img src="img/image2.jpg" alt="画像だよ2"></div>
+    <div><img src="img/image3.jpg" alt="画像だよ3"></div>
 
-<div class="main-container">
-
-<div id="left">
-
-
-
-			<p>Login</p>
-
-		<div>
-			<h3>商品を購入する際にはログインをお願いします。</h3>
-			<s:form action="LoginAction">
-				<s:textfield name="loginUserId"/>
-				<s:password name="loginPassword"/>
-				<s:submit value="ログイン"/>
-			</s:form>
-			<br/>
-			<div id="text-link">
-				<p>新規ユーザー登録は<a href='<s:url action="UserCreateAction" />'>こちら</a></p>
-				<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction" />'>こちら</a></p>
-			</div>
 		</div>
-
-
-</div>
-</div>
 </div>
 
 
-<div id="right"></div>
+        <div class="main-container">
 
 
+        <!-- 商品一覧 -->
+			<div class="amadanaItem clearfix">
 
+				<img src="img/ttl_recommend.png" alt="境界線" />
 
-
-
-
-
+				<table class="f_left">
+					<tr class="row1">
+						<td class="itemImageSmall"><a href="http://localhost:8080/ecsite/buyItem.jsp"><img src="img/hosi2.png" alt="商品1" /></a></td>
+						<td class="itemCategory"><a href="http://localhost:8080/ecsite/buyItem.jsp"><span>test1</span></a></td>
+						<td class="itemImageSmall"><a href="http://localhost:8080/ecsite/buyItem.jsp"><img src="img/hosi2.png" alt="説明2" /></a></td>
+						<td class="itemCategory"><a href="http://localhost:8080/ecsite/buyItem.jsp"><span>商品2</span></a></td>
+						<td class="itemImageSmall"><a href="http://localhost:8080/ecsite/buyItem.jsp"><img src="img/hosi2.png" alt="説明3" /></a></td>
+						<td class="itemCategory"><a href="http://localhost:8080/ecsite/buyItem.jsp"><span>商品3</span></a></td>
+						<td class="itemImageSmall"><a href="/shop/sal/item/list/category_id/51"><img src="img/hosi2.png" alt="説明4" /></a></td>
+						<td class="itemCategory"><a href="http://localhost:8080/ecsite/buyItem.jsp"><span>商品4</span></a></td>
+					</tr>
+					<tr class="row1">
+						<td class="itemImageSmall"><a href="http://localhost:8080/ecsite/buyItem.jsp"><img src="img/hosi2.png" alt="説明5" /></a></td>
+						<td class="itemCategory"><a href="http://localhost:8080/ecsite/buyItem.jsp"><span>商品5</span></a></td>
+					</tr>
+				</table>
+			</div>
 
 
 		<div id="text-center">
 
-		<!--
+
+					<!-- 次のページ -->
+		      <div class="navi clearfix"><strong>1</strong> <a href="?category_id=0&amp;pageno=2" onclick="eccube.movePage('2'); return false;">2</a> <a href="?category_id=0&amp;pageno=3" onclick="eccube.movePage('3'); return false;">3</a>  <a class="rbtn" href="?category_id=0&amp;pageno=2" onclick="eccube.movePage('2'); return false;">NEXT</a></div>
+
+
 			<s:form action="HomeAction">
 				<s:submit value="商品購入"/>
 			</s:form>
-			  -->
-
-
-
-
 			<s:if test="#session.id != null">
 				<p>ログアウトする場合は<a href='<s:url action="LogoutAction" />'>こちら</a></p>
 			</s:if>
+			<s:if test="#session.masterId != null">
+				<a href='<s:url action="LogoutAction"/>'>ログアウト</a>
+			</s:if>
 		</div>
 	</div>
+    </div>
+
 	<div id="footer">
+        2018
 	 	<div id="pr">
 		</div>
 	</div>
