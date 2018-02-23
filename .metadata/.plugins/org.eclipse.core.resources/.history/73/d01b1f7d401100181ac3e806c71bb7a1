@@ -1,7 +1,0 @@
-
-public class Student {
-	String name;
-	int score;
-	static final int MAX_SCORE = 100;
-
-}

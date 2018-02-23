@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 
 
-    <!-- スライドショー  -->
+    <!-- スライドショー
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -25,6 +25,8 @@
     });
 
   </script>
+
+ -->
 
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -125,7 +127,7 @@ header ul li{
 	margin:0 auto;
 
 	/*headerとmainの隙間*/
-	margin-top:100px;
+	margin-top:50px;
 
 	margin-bottom:30px;
 }
@@ -162,14 +164,15 @@ header ul li{
 
 </div>
 			<ul class="buildFrame">
-			<li><a href="/menu1/">ご利用ガイド</a></li>
+			<li><a href="http://localhost:8080/ecsite/guide.jsp">ご利用ガイド</a></li>
 			<li><a href="http://localhost:8080/ecsite/login.jsp">ログイン</a></li>
 			<li><a href="http://localhost:8080/ecsite/buyItemConfirm.jsp">カート</a></li>
 			<li><a href="/menu4/">お問い合わせ</a></li>
 
-            <!-- ツイッターとフェイスブックアイコン -->
+        <!-- ツイッターとフェイスブックアイコン-->
 		<li><a href="http://twitter.com" target="_blank" class="f_right face"><span><img src="img/btn_twit.gif" alt="ツイッター"  /></span></a></li>
 		<li><a href="https://www.facebook.com" target="_blank" class="f_right twit"><img src="img/btn_face.gif" alt="フェイスブック" /></a></li>
+
 
 
 			</ul>
@@ -190,8 +193,12 @@ header ul li{
 
 </div>
 
+<img src="img/image1.jpg" alt="画像だよ1">
 
-            <!-- スライドショー	-->
+
+
+
+            <!-- スライドショー
 <div class="abc_wrap">
 <div class="abc">
     <div><img src="img/image1.jpg" alt="画像だよ1"></div>
@@ -201,15 +208,25 @@ header ul li{
 		</div>
 </div>
 
-
+-->
         <div class="main-container">
 
-
-        <!-- 商品一覧 -->
 			<div class="amadanaItem clearfix">
 
 				<img src="img/ttl_recommend.png" alt="境界線" />
 
+
+
+<form action="cgi-bin/example.cgi" method="post">
+
+  <input type="search" name="search" placeholder="キーワードを入力">
+  <input type="submit" name="submit" value="検索">
+</form>
+
+
+
+
+        <!-- 商品一覧 -->
 				<table class="f_left">
 					<tr class="row1">
 						<td class="itemImageSmall"><a href="http://localhost:8080/ecsite/buyItem.jsp"><img src="img/hosi2.png" alt="商品1" /></a></td>
@@ -254,5 +271,7 @@ header ul li{
 	 	<div id="pr">
 		</div>
 	</div>
+
+
 </body>
 </html>

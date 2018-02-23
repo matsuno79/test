@@ -1,0 +1,44 @@
+package com.internousdev.ecsite3.action;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.internousdev.ecsite3.dto.BuyItemDTO;
+import com.opensymphony.xwork2.ActionSupport;
+
+
+public class BuyItemAction extends ActionSupport implements SessionAware {
+	
+	private ArrayList<BuyItemDTO> buyItemDTOList = new ArrayList<>();
+	
+	
+	private List<String> count;
+	
+	private int pay;
+	
+	public Map<String,Object> session;
+
+	
+	
+	
+	public String execute() {
+		String result = SUCCESS;
+		
+		session.put("count",count);result);
+		
+		@SuppressMarnings("unchecked")
+		List<BuyItemDTO> list=(List<BuyItemDTO>) session.get("buyItemDTOList");
+		
+		
+		for(int i=0; i<count.size();i i++) {
+			
+			
+			
+		}
+		
+	}
+	
+}
