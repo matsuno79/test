@@ -1,0 +1,17 @@
+package com.internousdev.ecsite3.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.internousdev.ecsite3.dto.ItemInsertDTO;
+import com.internousdev.ecsite3.util.DBConnector;
+import com.internousdev.ecsite3.util.DateUtil;
+
+public class ItemInsertDAO {
+
+	private DBConnector dbConnector = new DBConnector();
+	private Connection connection=dbConnector.getConnection();
+	private ItemInsertDTO itemInsertDTO=new
+
+}

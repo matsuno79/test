@@ -17,7 +17,7 @@ public class HomeAction extends ActionSupport implements SessionAware {
 
 	/**
 	 * ログインボタン押下時に実行
-	 * ログイン画面へ遷移します。
+	 * ログイン画面へ遷移します
 	 *
 	 * @return SUCCSESS
 	 */
