@@ -33,8 +33,10 @@ public class UserCreateConfirmDAO {
 				if(loginId.equals(loginUserId) || password.equals(loginPassword)){
 
 					if(loginId.equals(loginUserId)){
+
 						result = false;
 						return result;
+
 					}else{
 						result = true;
 					}

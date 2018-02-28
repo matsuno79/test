@@ -159,7 +159,7 @@ header ul li{
     <header>
 
 		<div class="logo">
-	<!-- 左上★を押したらhomeへ -->
+	<!-- 左上　★を押したらhomeへ -->
 	<a href="http://localhost:8080/ecsite/"><img src="img/hosi.png" alt="homeへ戻る"></a>
 
 </div>

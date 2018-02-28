@@ -12,7 +12,7 @@ public class ItemInsertDAO {
 
 	private DBConnector dbConnector = new DBConnector();
 	private Connection connection=dbConnector.getConnection();
-	private ItemInsertDTO itemInsertDTO=new itemInsertDTO();
+	private ItemInsertDTO itemInsertDTO = new itemInsertDTO();
 	private DateUtil dateUtil=new DateUtil();
 
 	private String sql="INSERT INTO item_info_transaction (item_name,item_price,item_stock,insert_date)VALUES(?,?,?,?)";
