@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="login" key="selection"/>
+		<item value="user" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ecsite"/>
 			<item value="login"/>
 			<item value="同じ"/>
 			<item value="UserCreateConfirm"/>
@@ -15,9 +16,9 @@
 			<item value="支払い"/>
 			<item value="ItemSearchAction"/>
 			<item value="検索"/>
-			<item value="insert"/>
 		</list>
 		<list key="replacehistory">
+			<item value="user"/>
 			<item value="black"/>
 			<item value=""/>
 			<item value="#99FFCC"/>
@@ -27,7 +28,7 @@
 		<item value="377" key="DIALOG_WIDTH"/>
 		<item value="1|メイリオ|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|メイリオ" key="DIALOG_FONT_NAME"/>
 		<item value="411" key="DIALOG_HEIGHT"/>
-		<item value="-366" key="DIALOG_X_ORIGIN"/>
-		<item value="86" key="DIALOG_Y_ORIGIN"/>
+		<item value="-325" key="DIALOG_X_ORIGIN"/>
+		<item value="368" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

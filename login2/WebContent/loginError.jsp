@@ -6,10 +6,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>login success</title>
+<title>ログイン失敗画面</title>
 </head>
 <body>
-<h1>ログインに失敗しました</h1>
-
+<h1>ログインに失敗しました。</h1>
 </body>
 </html>

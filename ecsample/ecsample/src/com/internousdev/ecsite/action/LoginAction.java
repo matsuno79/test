@@ -129,5 +129,26 @@ public class LoginAction extends ActionSupport implements SessionAware{
 	@Override
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
+
+
+		public String execute() {
+
+			String result = ERROR;
+
+			// ログイン実行
+			loginDTO = loginDAO.getLoginUserInfo(loginUserId, loginPassword);
+
+			session.put("loginUser", loginDTO);
+
+
+			// ログイン情報を比較
+			if(((LoginDTO) session.get("loginUser")).getLoginMaster()){
+				buyItemDTOList=buyItemDAO.getBuyItemInfo();
+				session.put("buyItemDTOList", buyItemDTOList);
+				session.put("masterId",loginUserId);
+				result = "master";
+
+			}
+
 	}
 }

@@ -11,7 +11,7 @@ password varcher(255)
 );
 
 insert into user values
-(1,"wago","123"),
-(1,"atsuhiko","123"),
+(1,"taro","123"),
+(1,"jiro","123"),
 (1,"hanako","123"),
 (1,"saburo","123");
